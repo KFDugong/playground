@@ -33,7 +33,7 @@ function shuffleRoles() {
 	const shuffledNames = shuffleArray(names);
 	const shuffledRoles = shuffleArray(roles);
 	let entry = [];
-	for (let i = 0; i < names.length - 1; i++) {
+	for (let i = 0; i < names.length; i++) {
 		entry.push(new roleDistribution(shuffledNames[i], shuffledRoles[i]));
 	}
 	console.log(entry);
